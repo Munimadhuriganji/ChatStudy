@@ -110,10 +110,11 @@ while True:
 ## Output:
 
 ** Client:
-![image](https://github.com/ShivrajRajasekaran/ChatStudy/assets/145742560/63d4f43c-7fdb-480b-a54b-f2bf4b4c83f8)
+![Screenshot 2024-08-22 110019](https://github.com/user-attachments/assets/7c954d27-85e3-4729-82db-1e9c2c829bae)
+
 
 **Server:
-![image](https://github.com/ShivrajRajasekaran/ChatStudy/assets/145742560/7784520f-cab1-48e1-a67e-ea5830cc8642)
+![Screenshot 2024-08-22 110031](https://github.com/user-attachments/assets/5aa6c339-fdbd-4c42-8b19-535333681e5a)
 
 
 ## Result:
