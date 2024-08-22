@@ -111,7 +111,8 @@ while True:
 
 
 # Server:
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/21d0ec6e-0c08-4400-9f2f-8e131f161333)
+
 
 
 ## Result:
