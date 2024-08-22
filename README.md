@@ -82,19 +82,16 @@ s=socket.socket()
 s.bind(('localhost',8000))
 s.listen(5)
 c,addr=s.accept()
-size=int(input("Enter number of frames to send : "))
-l=list(range(size))
-s=int(input("Enter Window Size : "))
-st=0
-i=0
 while True:
-    while(i<len(l)):
-        st+=s
-        c.send(str(l[i:st]).encode())
-        ack=c.recv(1024).decode()
-        if ack:
-            print(ack)
-            i+=s
+    i=input("Enter a data: ")
+    c.send(i.encode())
+    ack=c.recv(1024).decode()
+    if ack:
+        print(ack)
+        continue
+    else:
+        c.close()
+        break
 ```
 
 ## Server:
@@ -102,19 +99,19 @@ while True:
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
-while True: 
+while True:
     print(s.recv(1024).decode())
-    s.send("acknowledgement recived from the server".encode())
+    s.send("Acknowledgement Recived".encode())
 ```
 
 ## Output:
 
 # Client:
-![Screenshot 2024-08-22 110019](https://github.com/user-attachments/assets/7c954d27-85e3-4729-82db-1e9c2c829bae)
+![image](https://github.com/user-attachments/assets/2c2d7354-9cc9-48b9-858e-44e0c6b2b657)
 
 
 # Server:
-![Screenshot 2024-08-22 110031](https://github.com/user-attachments/assets/5aa6c339-fdbd-4c42-8b19-535333681e5a)
+![Uploading image.png…]()
 
 
 ## Result:
